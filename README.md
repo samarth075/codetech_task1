@@ -38,6 +38,8 @@
 
 ## Output:
 - The result of the selected arithmetic operation is printed to the console.
+  
+![Simple Calculator Output](images/image.png)
 
 # Conclusion:
 This project demonstrates a simple yet effective calculator application using Java. The program takes user input and performs basic arithmetic operations—addition, subtraction, multiplication, and division—while also handling edge cases such as division by zero. It showcases the use of control structures like switch-case and error handling, making it a good introduction to basic Java programming concepts.
