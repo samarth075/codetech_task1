@@ -1,26 +1,24 @@
-# Predicting Housing Prices Using Linear Regression on the Ames Housing Dataset
+# Simple Calculator in Java
 
-## Objective:
-To build a predictive model using linear regression to estimate housing prices based on various features from the Ames Housing dataset.
+## Input from the User:
+- The program uses the `Scanner` class to read input from the user.
+- It prompts the user to enter two numbers (`num1` and `num2`).
+- The user is also asked to choose an arithmetic operation: 
+  - Addition (`+`)
+  - Subtraction (`-`)
+  - Multiplication (`*`)
+  - Division (`/`)
 
-## Key Activities:
-- **Data Collection**: Loaded the Ames Housing dataset using `fetch_openml` from `sklearn.datasets`.
-- **Feature Selection**: Selected relevant features such as `GrLivArea`, `BedroomAbvGr`, and `Neighborhood`.
-- **Data Preprocessing**:
-  - Generated a correlation heatmap.
-  - Converted categorical variables into numerical values using one-hot encoding.
-  - Split the dataset into training and testing sets.
-  - Standardized the numerical features using `StandardScaler`.
-- **Model Training**: Trained a linear regression model using `LinearRegression` from `sklearn.linear_model`.
-- **Model Evaluation**: Evaluated performance using MSE and R² score.
+## Switch Case to Perform Operation:
+- A switch statement is used to handle the operation based on the user's choice:
+  - **Addition (`+`)**: Adds the two numbers.
+  - **Subtraction (`-`)**: Subtracts the second number from the first.
+  - **Multiplication (`*`)**: Multiplies the two numbers.
+  - **Division (`/`)**: Divides the first number by the second, with a check to prevent division by zero.
 
-## Technology Used:
-- Python
-- Libraries: pandas, numpy, seaborn, matplotlib, scikit-learn
+## Error Handling:
+- The program includes a check for division by zero. 
+- If the second number is zero and the user selects division, the program outputs an error message stating that division by zero is not allowed.
 
-## Dataset:
-- Ames Housing Dataset: Loaded from `fetch_openml` via `sklearn.datasets`.
-- Key Features: `GrLivArea`, `BedroomAbvGr`, `Neighborhood`.
-
-## Conclusion:
-Developed a linear regression model that predicts house prices using key features from the dataset. The model demonstrated reasonable accuracy in predicting house prices.
+## Output:
+- The result of the selected arithmetic operation is printed to the console.
